@@ -12,7 +12,7 @@ require AutoLoader;
 @EXPORT = qw();
 use MD5;
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub hash {
   my ($the_string, $key) = @_;
@@ -41,15 +41,6 @@ sub xor_string_max_64 {
   pack("C*", @ASCII);
 }
 
-
-# examples from RFC 2104 that work.  Uncomment to see for yourself.
-
-#print hexhash("Hi There" , chr(11) x 16), " should be 9294727a3638bb1c13f48ef8158bfc9d\n";
-
-#print hexhash("what do ya want for nothing?", "Jefe"), " should be 750c783e6ab0b503eaa86e310a5db738\n";
-
-#print hexhash( chr(221) x 50 , chr(170) x 16 ), " should be 56be34521d144c88dbb8c733f0e8b3f6\n";
-
 1;
 __END__
 
@@ -75,7 +66,8 @@ HMAC::MD5 - Perl module to compute an HMAC digest using MD5
 
 =head1 SEE ALSO
 
- RFC 2104
+ RFC 2104 - HMAC specification.
+ RFC 2202 - HMAC test cases.
 
 =head1 AUTHOR
 

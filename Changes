@@ -1,2 +1,9 @@
+
+0.02 Tue Sep 08 23:30:51 PDT 1998
+	- added more test cases from RFC 2202
+	- changed install directory name
+	- documentation updates
+
 0.01 Sun Aug 30 12:59:22 PDT 1998
 	- original version
+
