@@ -1,0 +1,7 @@
+Changes             - revision history
+example             - sample code to try out HMAC::MD5
+MANIFEST            - this file
+Makefile.PL         - "perl Makefile.PL" to get things started
+README              - read this first
+lib/HMAC/MD5.pm     - the main module
+t/digest.t          - test script

@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+use HMAC::MD5;
+
+print HMAC::MD5::hexhash("Hi There" , chr(11) x 16), " should be 9294727a3638bb1c13f48ef8158bfc9d\n";
+
+print HMAC::MD5::hexhash("what do ya want for nothing?", "Jefe"), " should be 750c783e6ab0b503eaa86e310a5db738\n";
+
+print HMAC::MD5::hexhash( chr(221) x 50 , chr(170) x 16 ), " should be 56be34521d144c88dbb8c733f0e8b3f6\n";
+
+

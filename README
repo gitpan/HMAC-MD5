@@ -1,0 +1,26 @@
+
+Introduction
+------------
+This module computes an HMAC MD5 digest as specified by RFC 2104.
+It is believed that HMAC MD5 is stronger than MD5.
+
+Installing
+----------
+To install, do the usual "perl Makefile.PL ; make ; make test ; make install".
+
+Example
+-------
+print HMAC::MD5::hexhash("what do ya want for nothing?", "Jefe"),
+      " should be 750c783e6ab0b503eaa86e310a5db738\n";
+
+See Also
+--------
+RFC 2104.
+
+Cheers,
+Clinton Wong
+clintdw@netcom.com
+http://postmaster.net/~clintdw/
+
+August 30, 1998
+
